@@ -1,0 +1,67 @@
+/*use grid cheat sheet*/
+.container
+{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+	grid-template-rows: 1fr 1fr;
+    /*
+    300px 300px 300px 300px not responsive
+    25% 25% 25% 25%  quite responsive
+    1fr 1fr 1fr 1fr  more responsive
+    auto make only one column
+    */
+   /* justify-items:end; use to align items*/
+   /*align-items: start;*/
+}
+.zone
+{
+   /*display: block;*/
+   text-align: center;
+   border: 1px solid #bbb;
+   border-radius: 4px;
+   font-size: 10em;
+   transition: all 0.3s linear;
+   cursor: pointer;
+}
+.zone:hover
+{
+	background: rgba(0,0,0,1);
+	font-size: 12em;
+}
+.green
+{
+	background-color: green;
+	/*
+	grid-column: 1/3;
+    use for indivisual item
+    start/end 
+    grid-column: 1/-3;
+    we use - if we dont know exactly the length
+    grid-column: span 3;
+    always take 2 colums responsive
+    all thihs same for row
+	justify-self:end; use to align items
+    align-self: start;
+	*/
+}
+.red
+{
+	background-color: red; 
+}
+.blue
+{
+	background-color: blue;
+}
+.yellow
+{
+    background-color: yellow;
+}
+.purple
+{
+    background-color: purple;
+}
+.brown
+{
+    background-color: brown;
+}
